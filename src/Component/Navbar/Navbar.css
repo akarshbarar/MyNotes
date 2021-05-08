@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    overflow: hidden;
+}
+.navbar_content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 0 10px;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    background-color: red;
+}

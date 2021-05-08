@@ -1,0 +1,12 @@
+.signup{
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup > form{
+    display: flex;
+    flex-direction: column;
+}
