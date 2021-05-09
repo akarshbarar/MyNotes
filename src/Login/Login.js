@@ -1,12 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Login.css'
 import { useHistory} from 'react-router-dom'
 
-
+import supabase from '../utils/supabase';
 function Login() {
 
     const history=useHistory();
 
+    useEffect(()=>{
+        const user = supabase.auth.user();
+        if(user){
+            history.push('/home')
+        }
+    },[]);
+    
     function signupPage(e){
         e.preventDefault();
         history.push('/signup')

@@ -1,11 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router, Link,Route, Switch,} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
 import Login from './Login/Login';
 import Home from './Home/Home';
 import Error from './Error/Error'
 import Signin from './Login/Signin'
 import Signup from './Login/Signup'
-import Navbar from './Component/Navbar/Navbar';
 
 function App() {
   return (
