@@ -1,0 +1,15 @@
+.note__header{
+    padding: 10%;
+    background-color: rgb(223, 223, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+}
+.note__data{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

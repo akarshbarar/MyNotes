@@ -1,0 +1,17 @@
+.sidebarright{
+    top:50px;
+    position: sticky;
+    z-index: 999;
+}
+
+.sidebarright>ul>li{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 99px;
+}
+.sidebarright>ul>li:hover{
+    background-color: rgb(238, 17, 17);
+    color: white;
+}

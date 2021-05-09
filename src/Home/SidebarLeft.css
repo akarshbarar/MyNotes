@@ -1,0 +1,5 @@
+.sidebarleft{
+    top:50px;
+    position: sticky;
+    z-index: 99999;
+}

@@ -1,54 +1,50 @@
 import React from 'react'
 import Navbar from '../Component/Navbar/Navbar'
+import Note from '../Component/Note/Note'
 import './Home.css'
+import SidebarLeft from './SidebarLeft'
+import SidebarRight from './SidebarRight'
+
+
 function Home() {
+
+    function addNewNotes(e){
+        e.preventDefault();
+        
+    }
+
     return (
         <div className="home">
             <Navbar/>
             <div className="home__data">
                 <div className="home__left">
-                   <li>Notes</li> 
-                   <li>Reminder</li> 
-                   <li>Complete</li> 
+                   <SidebarLeft/>
                 </div>
                 <div className="home__main">
 
-                        <div class="flexsearch">
-                                <div class="flexsearch--wrapper">
-                                    <form class="flexsearch__form" action="#" method="post">
-                                        <div class="flexsearch--input-wrapper">
-                                            <input class="flexsearch--input" type="search" placeholder="search"></input>
+                        <div className="flexsearch">
+                                <div className="flexsearch--wrapper">
+                                    <form className="flexsearch__form" action="#" method="post">
+                                        <div className="flexsearch--input-wrapper">
+                                            <input className="flexsearch--input" type="search" placeholder="search"></input>
                                         </div>
-                                        <input class="flexsearch--submit" type="submit" value="&#10140;"/>
+                                        <input className="" type="submit" value="&#10140;"/>
                                     </form>
+                                </div>
+                                <div>
+                                    <button className="btn add" onClick={addNewNotes}>ADD</button>
                                 </div>
                         </div>
                         <div className="notes__container">
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
-                           <div className="notes__content">aaaa</div>
+                           <div className="notes__content">
+                                <Note/>
+                           </div>
+                      
 
                         </div>
                 </div>
                 <div className="home__right">
-                    <h3>ALL</h3>
-                    <ul>
-                        <li>1111</li>
-                        <li>2222</li>
-                        <li>3333</li>
-                    </ul>
+                  <SidebarRight/> 
                 </div>
             </div>
         </div>
